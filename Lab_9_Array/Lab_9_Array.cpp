@@ -49,6 +49,7 @@ int main()
 			fin >> arr[i];
 		}
 		cout << "\n\t\tФайл загружен!\n\n";
+		fin.close();
 	}
 
 	cout
@@ -216,8 +217,8 @@ void InsertionSort(int arr[], int row)
 void CocktailSort(int a[], int row)
 {
 	bool swapped = true;
-	int start = 0, sravn = 0, tempStore;
-	unsigned long long swaps = 0;
+	int start = 0, tempStore;
+	unsigned long long sravn = 0, swaps = 0;
 	int end = row - 1;
 
 	while (swapped) {
